@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("../static/fonts/GraphikCompact/GraphikCompact-Light-Trial.otf");
+}
+
+
+
+@layer base{
+  html{
+    font-family: "Graphik";
+  }
+}
+
+.shadow-bottom {
+    box-shadow: 0 6px 9px -4px rgba(0, 0, 0, 0.5);
+  }
+
+.shadow-box{
+  box-shadow: 6px 6px 9px -4px rgba(0, 0, 0, 0.5);
+}
+  .gradient {
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 5px,
+      black 5px,
+      black 10px
+    );
+    width: 100px;
+    height: 100px;
+  }
+  
+  .plot-band-pattern {
+    background-color: #ffffff;
+    opacity: 0.8;
+    background: repeating-linear-gradient( -45deg, #ddd, #ddd 2.5px, #ffffff 2.5px, #ffffff 10.5px );
+  }
